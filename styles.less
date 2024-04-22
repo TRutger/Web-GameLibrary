@@ -1,0 +1,87 @@
+/* StyleSheet */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+/* Style Lines */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    font-family: "Orbitron", sans-serif;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    width: 100vw;
+    max-width: 85vw;
+    height: 6vh; 
+
+    margin: 1vh auto; // Vertical alignment 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // 
+    
+    .logo {
+        transition: scale 0.4s ease;
+        a {
+            font-size: 4vh;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .logo:hover {
+        scale: 1.1;
+    }
+    .logo:active {
+        scale: 0.9;
+    }
+    
+    ul {
+        display: flex;
+        gap: 2vw;
+        list-style: none;
+
+        a {
+            font-size: 3vh;
+            color: white;
+            text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+            text-underline-offset: 0.4vh;
+            transition: text-decoration-color 300ms, text-underline-offset 300ms;
+        }
+
+        a:hover {
+            text-decoration-color: rgba(255, 255, 255, 1);
+            text-underline-offset: 0.9vh;
+        }
+    }
+
+    #active {
+        text-decoration: underline;
+    }
+
+    .action_Btn {
+        background-color: #ff0000;
+        color: white;
+        padding: 0.65vw 1vw;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: scale 0.4s ease;
+        font-weight: bold;
+    }
+    .action_Btn:hover {
+        background-color: #6eac95;
+        scale: 1.1;
+        text-decoration: none;
+    }
+    .action_Btn:active {
+        scale: 0.95;
+    }    
+}
